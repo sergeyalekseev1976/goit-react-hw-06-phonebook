@@ -1,6 +1,5 @@
 import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/contactsSlice';
-import PropTypes from 'prop-types';
 import { GoPerson } from 'react-icons/go';
 import { Item, ContactText, ButtonContact } from './ContactListItem.styled';
 
@@ -18,9 +17,3 @@ export const ContactListItem = ({ name, number, id }) => {
   );
 };
 
-ContactListItem.propTypes = {
-  id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  number: PropTypes.string.isRequired,
-  onDeleteContact: PropTypes.func.isRequired,
-};
